@@ -41,5 +41,14 @@ int search(const vector<int>& nums, int target) {
 }
 ```
 
+```
+Search in Rotated Sorted Array II
+
+Follow up for "Search in Rotated Sorted Array":
+What if duplicates are allowed?
+Would this affect the run-time complexity? How and why?
+Write a function to determine if a given target is in the array.
+```
+
 Refer :
      http://bangbingsyb.blogspot.com/2014/11/leetcode-search-in-rotated-sorted-array.html
