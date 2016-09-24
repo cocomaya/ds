@@ -1,0 +1,32 @@
+```
+Remove Duplicates from Sorted Array I
+Given a sorted array, remove the duplicates in place such that each element appear only once and return the new length.
+Do not allocate extra space for another array, you must do this in place with constant memory.
+For example,
+Given input array A = [1,1,2],
+Your function should return length = 2, and A is now [1,2].
+```
+```
+Remove Duplicates from Sorted Array II
+Follow up for "Remove Duplicates":
+What if duplicates are allowed at most twice?
+For example,
+Given sorted array A = [1,1,1,2,2,3],
+Your function should return length = 5, and A is now [1,1,2,2,3].
+```
+
+I
+
+int removeDuplicates(vector<int> nums){
+   int index = 0;
+   for(int i = 1; i<nums.size();i++)
+      if(nums[i]!=nums[index])
+         nums[++index] = nums[i];  //   if(++index!=i) nums[index]=nums[i];   //to avoid copy the same element
+   return index; 
+}
+
+Refer:
+http://bangbingsyb.blogspot.com/2014/11/leetcode-remove-duplicates-from-sorted.html
+https://discuss.leetcode.com/topic/17180/3-6-easy-lines-c-java-python-ruby
+
+
