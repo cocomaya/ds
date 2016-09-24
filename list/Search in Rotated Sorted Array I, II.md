@@ -52,6 +52,4 @@ Write a function to determine if a given target is in the array.
 
 Refer :
 
-     http://bangbingsyb.blogspot.com/2014/11/leetcode-search-in-rotated-sorted-array.html
-     
-     http://www.cnblogs.com/TenosDoIt/p/3465240.html
+  
