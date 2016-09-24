@@ -23,7 +23,7 @@ int search(const vector<int>& nums, int target) {
            else
                first = mid + 1;
      }
-      else {                        //[end ,last] is a sorted array
+      else {                        //[mid ,last] is a sorted array
           if (nums[mid] < target && target <= nums[last-1])
                first = mid + 1;
           else
