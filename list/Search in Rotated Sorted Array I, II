@@ -23,7 +23,7 @@ int search(const vector<int>& nums, int target) {
      const int mid = first + (last - first) / 2;
      if (nums[mid] == target)
         return mid;
-     // 从有序的那个子区间着手！     
+     // 从有序的那个子区间着手！如果不在这个有序子区间的范围里，就必定要在另外一个子区间去找     
      if (nums[first] <= nums[mid]) { //[first ,mid] is a sorted array
            if (nums[first] <= target && target < nums[mid])
                last = mid;
