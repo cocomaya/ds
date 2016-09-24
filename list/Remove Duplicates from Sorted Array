@@ -39,6 +39,16 @@ two cases for "if(nums[i]!=nums[index-1])":
 2)     a       b         b(c)  
 
 
+
+int removeDuplicates(vector<int> nums){
+   if(nums.size()<=2) return nums.size();
+   int index = 2;
+   for(int i = 2; i<nums.size();i++)
+      if(nums[i]!=nums[index-2])
+         nums[index++] = nums[i];  
+   return index; 
+}
+
 Refer:
 http://bangbingsyb.blogspot.com/2014/11/leetcode-remove-duplicates-from-sorted.html
 https://discuss.leetcode.com/topic/17180/3-6-easy-lines-c-java-python-ruby
