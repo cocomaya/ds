@@ -16,7 +16,7 @@ Write a function to determine if a given target is in the array.
 
 To search in a sorted array, remind us of binary-search. 然后这不是一个完全有序而是有序数组旋转过的，折半后，分成的2个区间，其中一个是有序的，另外一个则不是。
 
-
+```
 int search(const vector<int>& nums, int target) {
    int first = 0, last = nums.size();
    while (first != last) {
@@ -39,6 +39,7 @@ int search(const vector<int>& nums, int target) {
      }
      return -1;
 }
+```
 
 Refer :
      http://bangbingsyb.blogspot.com/2014/11/leetcode-search-in-rotated-sorted-array.html
