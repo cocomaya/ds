@@ -18,3 +18,7 @@ nums2 = [3, 4]
 The median is (2 + 3)/2 = 2.5
 Subscribe to see which companies asked this question
 ```
+
+If we merge the two array ,the complexity will be O(m+n). 
+
+The problem can be view as find " the k-largest element in the two sorted arrays"
