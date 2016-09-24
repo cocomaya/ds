@@ -8,6 +8,7 @@ You may assume no duplicate exists in the array.
 ```
 
 To search in a sorted array, remind us of binary-search. 然后这不是一个完全有序而是有序数组旋转过的，折半后，分成的2个区间，其中一个是有序的，另外一个则不是。
+着力点在于判断对那个有序区间进行处理，如果不在有序区间，就到另外一个区间去找！
 
 ```
 int search(const vector<int>& nums, int target) {
@@ -45,7 +46,8 @@ Write a function to determine if a given target is in the array.
 
 ```
 通过<=判断一个区间是否是有序区间就不行了，可以拆分成 用<判断是否有序子区间
-，用=表示是重复元素，可以跳过重复元素
+，用=表示是重复元素，可以跳过重复元素.
+着力点同样在于对那个有序区间进行处理，如果不在有序区间，就到另外一个区间去找！
 
 bool search(const vector<int>& nums, int target) {
    int first = 0, last = nums.size();
