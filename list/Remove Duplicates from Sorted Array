@@ -33,6 +33,11 @@ int removeDuplicates(vector<int> nums){
    return index; 
 }
 
+two cases for "if(nums[i]!=nums[index-1])":
+    index-1  index  ...  i
+1)     a       a         b  
+2)     a       b         b(c)  
+
 
 Refer:
 http://bangbingsyb.blogspot.com/2014/11/leetcode-remove-duplicates-from-sorted.html
