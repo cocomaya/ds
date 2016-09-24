@@ -44,6 +44,9 @@ Write a function to determine if a given target is in the array.
 ```
 
 ```
+通过<=判断一个区间是否是有序区间就不行了，可以拆分成 用<判断是否有序子区间
+，用=表示是重复元素，可以跳过重复元素
+
 bool search(const vector<int>& nums, int target) {
    int first = 0, last = nums.size();
    while (first != last) {
