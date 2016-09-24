@@ -5,13 +5,6 @@ Suppose a sorted array is rotated at some pivot unknown to you beforehand.
 (i.e., 0 1 2 4 5 6 7 might become 4 5 6 7 0 1 2).
 You are given a target value to search. If found in the array return its index, otherwise return -1.
 You may assume no duplicate exists in the array.
-
-Search in Rotated Sorted Array II
-
-Follow up for "Search in Rotated Sorted Array":
-What if duplicates are allowed?
-Would this affect the run-time complexity? How and why?
-Write a function to determine if a given target is in the array.
 ```
 
 To search in a sorted array, remind us of binary-search. 然后这不是一个完全有序而是有序数组旋转过的，折半后，分成的2个区间，其中一个是有序的，另外一个则不是。
