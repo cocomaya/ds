@@ -6,6 +6,16 @@ For example,
 Given input array A = [1,1,2],
 Your function should return length = 2, and A is now [1,2].
 ```
+Solution:
+
+int removeDuplicates(vector<int> nums){
+   int index = 0;
+   for(int i = 1; i<nums.size();i++)
+      if(nums[i]!=nums[index])
+         nums[++index] = nums[i];  //   if(++index!=i) nums[index]=nums[i];   //to avoid copy the same element
+   return index; 
+}
+
 ```
 Remove Duplicates from Sorted Array II
 Follow up for "Remove Duplicates":
@@ -15,15 +25,7 @@ Given sorted array A = [1,1,1,2,2,3],
 Your function should return length = 5, and A is now [1,1,2,2,3].
 ```
 
-I
 
-int removeDuplicates(vector<int> nums){
-   int index = 0;
-   for(int i = 1; i<nums.size();i++)
-      if(nums[i]!=nums[index])
-         nums[++index] = nums[i];  //   if(++index!=i) nums[index]=nums[i];   //to avoid copy the same element
-   return index; 
-}
 
 Refer:
 http://bangbingsyb.blogspot.com/2014/11/leetcode-remove-duplicates-from-sorted.html
