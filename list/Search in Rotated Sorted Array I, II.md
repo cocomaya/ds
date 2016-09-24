@@ -43,6 +43,7 @@ What if duplicates are allowed?
 Would this affect the run-time complexity? How and why?
 Write a function to determine if a given target is in the array.
 ```
+consider this sorted array 1111115, which is rotated to 1151111.
 
 ```
 通过<=判断一个区间是否是有序区间就不行了，可以拆分成 用<判断是否有序子区间
