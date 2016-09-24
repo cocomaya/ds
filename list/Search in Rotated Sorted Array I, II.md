@@ -55,17 +55,17 @@ bool search(const vector<int>& nums, int target) {
        const int mid = first + (last - first) / 2;
       if (nums[mid] == target)
          return true;
-      if (nums[first] < nums[mid]) {
+      if (nums[first] < nums[mid]) {        // [first, mid] is a sorted segment
          if (nums[first] <= target && target < nums[mid])
              last = mid;
          else
              first = mid + 1;
-      } else if (nums[first] > nums[mid]) {
+      } else if (nums[first] > nums[mid]) { //[mid ,last] is a sorted segment
          if (nums[mid] < target && target <= nums[last-1])
              first = mid + 1;
          else
              last = mid;
-      } else
+      } else                               //can't judge ,we have to skip the first               
           //skip duplicate one
          first++;
     }
