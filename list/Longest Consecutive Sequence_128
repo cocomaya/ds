@@ -6,4 +6,12 @@ The longest consecutive elements sequence is [1, 2, 3, 4]. Return its length: 4.
 
 Your algorithm should run in O(n) complexity.
 
+Solution 1(use hash set or hash map):
+
 http://www.jiuzhang.com/solutions/longest-consecutive-sequence/
+
+solution2:
+
+We can also project the arrays to a new array with length to be the largest element in the array. Then iterate over the array and get the longest consecutive sequence. If the largest number is too large, then the time would be bad. This is just another thought.
+
+
